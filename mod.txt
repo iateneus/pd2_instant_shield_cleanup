@@ -1,0 +1,22 @@
+{
+  "name": "Instant Shield Cleanup",
+  "description": "Removes dropped shields in loud using native disposal. Preserves normal corpse and cosmetic debris behavior.",
+  "author": "iateneus",
+  "image": "thumb.png",
+  "version": "1.4",
+  "updates": [
+  {
+    "identifier": "pd2_instant_shield_cleanup",
+    "host": {
+      "meta": "https://raw.githubusercontent.com/iateneus/pd2_instant_shield_cleanup/main/meta.json"
+    }
+  }
+],
+
+  "hooks": [
+    {
+      "hook_id": "lib/managers/enemymanager",
+      "script_path": "lua/main.lua"
+    }
+  ]
+}
